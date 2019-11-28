@@ -1,5 +1,15 @@
 package newsfeed
 
+// Getter do something
+type Getter interface {
+	GetAll() []Item
+}
+
+// Adder do something
+type Adder interface {
+	Add(item Item)
+}
+
 // Item struct
 type Item struct {
 	Title string `json:"title"`
